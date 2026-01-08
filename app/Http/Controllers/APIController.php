@@ -12,10 +12,9 @@ use App\Models\Set;
 class APIController extends Controller
 {
 
-
    public function listCards(Request $request) {
       
-       $query = Card::query()->with('sets:id,set,set_name')->get();
+       $query = Card::query()->with('sets:id,set,set_name');
 
 
        //http://127.0.0.1:8000/api/cards?name=Brainstorm
