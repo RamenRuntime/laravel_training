@@ -2,11 +2,13 @@
 
 namespace App\Models;
 
+use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class CardSet extends Model
 {
+    use CrudTrait;
    protected $table = 'card_sets';
 
 
